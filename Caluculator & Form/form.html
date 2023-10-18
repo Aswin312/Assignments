@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="form.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div>
+    <h1>Customer Survey Form</h1>
+    </div>
+
+<div class="survey-form">
+    <form id="surveyForm" onsubmit="submitForm(event)">
+        <label for="firstName">First Name:</label>
+        <input class="input" type="text" id="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input class="input" type="text" id="lastName" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input class="input" type="date" id="dob" required>
+
+        <label for="country">Country:</label>
+        <select id="country" required>
+            <option value="">Select Country</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+        </select>
+        Gender<br>
+        <div id="checkbox">
+       <input  type="checkbox" name="gender" value="yes">Male 
+       <input  type="checkbox" name="gender" value="yes">Female 
+       <input  type="checkbox" name="gender" value="yes">Others 
+    </div>
+        <label for="profession">Profession:</label>
+        <input class="input" type="text" id="profession" required>
+
+        <label for="email">Email:</label>
+        <input class="input" type="email" id="email" required>
+
+        <label for="mobile">Mobile Number:</label>
+        <input class="input" type="tel" id="mobile" required>
+
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="button" onclick="resetForm()">Reset</button>
+        </div>
+    </form>
+</div>
+
+<div id="popup" class="popup" style="display: none;">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Survey Form Submission</h2>
+        <div id="popupResults"></div>
+    </div>
+</div>
+ 
+<h6>2023 Customer Survey Form.All Rights Reserved | Design By Aswin</h6>
+
+<script src="form.js"></script>
+</body>
+</html>
