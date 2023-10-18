@@ -11,3 +11,6 @@ function sortDescendingBasic(arr) {
     }
     return arr;
 }
+let inputArray = [5, 2, 9, 1, 5, 6];
+let sortedArray = sortDescendingBasic(inputArray);
+console.log("Sorted Array Descending Order:", sortedArray);

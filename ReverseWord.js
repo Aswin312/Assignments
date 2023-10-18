@@ -15,3 +15,6 @@ function reverseWordsBasic(sentence) {
 
     return reversedWords.join(" ");
 }
+let inputSentence = "My name is Aswin";
+let reversedResult = reverseWordsBasic(inputSentence);
+console.log(" After Reversed :", reversedResult);
